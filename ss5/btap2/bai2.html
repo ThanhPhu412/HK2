@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trắc nghiệm</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .container { width: 80%; margin: auto; }
+  .question { margin-bottom: 20px; }
+  .options { list-style-type: none; padding: 0; }
+  .options li { margin-bottom: 10px; }
+  .options label { cursor: pointer; }
+  .button { display: block; margin-top: 20px; }
+  .result { font-weight: bold; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div id="timer">Thời gian: <span id="time">15</span> giây</div>
+  
+  <!-- Câu hỏi 1 -->
+  <div class="question" id="question1">
+    <p>Câu 1: Ngày giải phóng miền Nam là ngày nào sau đây?</p>
+    <ul class="options">
+      <li><input type="radio" name="option1" id="optionA" value="27/4"><label for="optionA">A. 27/4</label></li>
+      <li><input type="radio" name="option1" id="optionB" value="28/4"><label for="optionB">B. 28/4</label></li>
+      <li><input type="radio" name="option1" id="optionC" value="29/4"><label for="optionC">C. 29/4</label></li>
+      <li><input type="radio" name="option1" id="optionD" value="30/4"><label for="optionD">D. 30/4</label></li>
+    </ul>
+    <!-- Nút chuyển sang câu hỏi tiếp theo -->
+    <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+  </div>
+  
+  <!-- Câu hỏi 2 -->
+  <div class="question" id="question2" style="display: none;">
+    <p>Câu 2: Ai là người sáng lập ra Đại Việt, tiền thân của nước Việt Nam hiện nay?</p>
+    <ul class="options">
+      <li><input type="radio" name="option2" id="optionE" value="Lý Thường Kiệt"><label for="optionE">A. Lý Thường Kiệt</label></li>
+      <li><input type="radio" name="option2" id="optionF" value="Trần Thủ Độ"><label for="optionF">B. Trần Thủ Độ</label></li>
+      <li><input type="radio" name="option2" id="optionG" value="Lê Lợi"><label for="optionG">C. Lê Lợi</label></li>
+      <li><input type="radio" name="option2" id="optionH" value="Nguyễn Huệ"><label for="optionH">D. Nguyễn Huệ</label></li>
+    </ul>
+    <!-- Nút chuyển sang câu hỏi tiếp theo -->
+    <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+  </div>
+
+  <!-- Thêm 8 câu hỏi mới -->
+  <!-- Câu hỏi 3 -->
+  <div class="question" id="question3" style="display: none;">
+    <p>Câu 3: Chiến dịch Hồ Chí Minh trên núi Bắc Sơn được tiến hành vào năm nào?</p>
+    <ul class="options">
+      <li><input type="radio" name="option3" id="optionI" value="1950"><label for="optionI">A. 1950</label></li>
+      <li><input type="radio" name="option3" id="optionJ" value="1952"><label for="optionJ">B. 1952</label></li>
+      <li><input type="radio" name="option3" id="optionK" value="1954"><label for="optionK">C. 1954</label></li>
+      <li><input type="radio" name="option3" id="optionL" value="1956"><label for="optionL">D. 1956</label></li>
+    </ul>
+    <!-- Nút chuyển sang câu hỏi tiếp theo -->
+    <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+  </div>
+
+  <!-- Câu hỏi 4 -->
+  <div class="question" id="question4" style="display: none;">
+    <p>Câu 4: Định mệnh của Quốc hội Việt Nam Dân chủ Cộng hòa ra đời vào ngày nào?</p>
+    <ul class="options">
+      <li><input type="radio" name="option4" id="optionM" value="2/9/1945"><label for="optionM">A. 2/9/1945</label></li>
+      <li><input type="radio" name="option4" id="optionN" value="19/8/1945"><label for="optionN">B. 19/8/1945</label></li>
+      <li><input type="radio" name="option4" id="optionO" value="22/12/1945"><label for="optionO">C. 22/12/1945</label></li>
+      <li><input type="radio" name="option4" id="optionP" value="30/4/1975"><label for="optionP">D. 30/4/1975</label></li>
+    </ul>
+    <!-- Nút chuyển sang câu hỏi tiếp theo -->
+    <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+  </div>
+
+  <!-- Câu hỏi 5 -->
+  <div class="question" id="question5" style="display: none;">
+    <p>Câu 5: Ai là người đề xuất chính sách đổi mới (đổi mới kinh tế) đầu tiên ở Việt Nam?</p>
+    <ul class="options">
+    <li><input type="radio" name="option5" id="optionQ" value="Hồ Chí Minh"><label for="optionQ">A. Hồ Chí Minh</label></li>
+    <li><input type="radio" name="option5" id="optionR" value="Lê Duẩn"><label for="optionR">B. Lê Duẩn</label></li>
+    <li><input type="radio" name="option5" id="optionS" value="Võ Nguyên Giáp"><label for="optionS">C. Võ Nguyên Giáp</label></li>
+    <li><input type="radio" name="option5" id="optionT" value="Đỗ Mười"><label for="optionT">D. Đỗ Mười</label></li>
+    </ul>
+    <!-- Nút chuyển sang câu hỏi tiếp theo -->
+    <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+    
+      </div>
+      <!-- Câu hỏi 6 -->
+      <div class="question" id="question6" style="display: none;">
+        <p>Câu 6: Địa danh nào là nơi diễn ra trận Điện Biên Phủ?</p>
+        <ul class="options">
+          <li><input type="radio" name="option6" id="optionU" value="Lào Cai"><label for="optionU">A. Lào Cai</label></li>
+          <li><input type="radio" name="option6" id="optionV" value="Điện Biên"><label for="optionV">B. Điện Biên</label></li>
+          <li><input type="radio" name="option6" id="optionW" value="Sơn La"><label for="optionW">C. Sơn La</label></li>
+          <li><input type="radio" name="option6" id="optionX" value="Lai Châu"><label for="optionX">D. Lai Châu</label></li>
+        </ul>
+        <!-- Nút chuyển sang câu hỏi tiếp theo -->
+        <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+      </div>
+      <!-- Câu hỏi 7 -->
+      <div class="question" id="question7" style="display: none;">
+        <p>Câu 7: Cuộc biểu tình ở thành phố Huế năm 1963 đã dẫn đến việc gì?</p>
+        <ul class="options">
+          <li><input type="radio" name="option7" id="optionY" value="Biến cố Tháng Tám"><label for="optionY">A. Biến cố Tháng Tám</label></li>
+          <li><input type="radio" name="option7" id="optionZ" value="Coup Liên hiệp quân sự"><label for="optionZ">B. Coup Liên hiệp quân sự</label></li>
+          <li><input type="radio" name="option7" id="optionAA" value="Cách mạng Tháng Tám"><label for="optionAA">C. Cách mạng Tháng Tám</label></li>
+          <li><input type="radio" name="option7" id="optionAB" value="Diệt chủng Ngô Đình Diệm"><label for="optionAB">D. Diệt chủng Ngô Đình Diệm</label></li>
+        </ul>
+        <!-- Nút chuyển sang câu hỏi tiếp theo -->
+        <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+      </div>
+      <!-- Câu hỏi 8 -->
+      <div class="question" id="question8" style="display: none;">
+        <p>Câu 8: Chiến tranh Việt Nam đã chính thức kết thúc vào ngày nào?</p>
+        <ul class="options">
+          <li><input type="radio" name="option8" id="optionAC" value="30/4/1975"><label for="optionAC">A. 30/4/1975</label></li>
+          <li><input type="radio" name="option8" id="optionAD" value="2/9/1945"><label for="optionAD">B. 2/9/1945</label></li>
+          <li><input type="radio" name="option8" id="optionAE" value="1/5/1975"><label for="optionAE">C. 1/5/1975</label></li>
+          <li><input type="radio" name="option8" id="optionAF" value="1/1/1976"><label for="optionAF">D. 1/1/1976</label></li>
+        </ul>
+        <!-- Nút chuyển sang câu hỏi tiếp theo -->
+        <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+      </div>
+      <!-- Câu hỏi 9 -->
+      <div class="question" id="question9" style="display: none;">
+        <p>Câu 9: Công trình kiến trúc nổi tiếng nào ở Việt Nam được xây dựng từ thế kỷ 11 đến thế kỷ 12 dưới triều đại vua Lý Thánh Tông?</p>
+        <ul class="options">
+          <li><input type="radio" name="option9" id="optionAG" value="Chùa Một Cột"><label for="optionAG">A. Chùa Một Cột</label></li>
+          <li><input type="radio" name="option9" id="optionAH" value="Chùa Hương"><label for="optionAH">B. Chùa Hương</label></li>
+          <li><input type="radio" name="option9" id="optionAI" value="Chùa Trấn Biên"><label for="optionAI">C. Chùa Trấn Biên</label></li>
+          <li><input type="radio" name="option9" id="optionAJ" value="Chùa Bái Đính"><label for="optionAJ">D. Chùa Bái Đính</label></li>
+        </ul>
+            <!-- Nút chuyển sang câu hỏi tiếp theo -->
+    <button class="button" onclick="nextQuestion()">Câu tiếp theo</button>
+  </div>
+
+  <!-- Câu hỏi 10 -->
+  <div class="question" id="question10" style="display: none;">
+    <p>Câu 10: Trong lịch sử Việt Nam, ai là người đầu tiên sử dụng chữ quốc ngữ để giảng dạy?</p>
+    <ul class="options">
+      <li><input type="radio" name="option10" id="optionAK" value="Trần Hưng Đạo"><label for="optionAK">A. Trần Hưng Đạo</label></li>
+      <li><input type="radio" name="option10" id="optionAL" value="Nguyễn Trãi"><label for="optionAL">B. Nguyễn Trãi</label></li>
+      <li><input type="radio" name="option10" id="optionAM" value="Phan Bội Châu"><label for="optionAM">C. Phan Bội Châu</label></li>
+      <li><input type="radio" name="option10" id="optionAN" value="Trần Tế Xương"><label for="optionAN">D. Trần Tế Xương</label></li>
+    </ul>
+    <!-- Nút chuyển sang câu hỏi tiếp theo -->
+    <button class="button" onclick="submitAnswer()">Trả lời</button>
+  </div>
+  
+  <!-- Kết quả -->
+  <div id="result" class="result"></div>
+</div>
+  
+<script src="./2.js"></script>
+</body>
+</html>
+
