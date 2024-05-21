@@ -1,10 +1,9 @@
-function bp(inp: number | number[]): any {
-  if (typeof inp === "number") {
-    return inp * inp;
-  } else if (Array.isArray(inp)) {
-    return inp.map((num) => num * num);
-  }
-}
-
-console.log(bp(2));
-console.log(bp([1, 2, 3, 4, 5]));
+type student = {
+  username: string;
+  age: number;
+};
+let studen: student = {
+  username: "van",
+  age: 20,
+};
+console.log(studen.username + " " + studen.age);

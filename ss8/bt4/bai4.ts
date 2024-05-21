@@ -1,18 +1,6 @@
-let str: string="Cho"
-let arrn : number[]=[1,2,3,4,5]
-
-
-const checka = (inp: string|number[]) =>{
-
-    if ( typeof inp ==="string" ){
-        return console.log(inp);
-        
-    } else if(Array.isArray(inp)){
-        inp.forEach((out)=> console.log(out))
-    }
-
-}
-
-
-checka(str)
-checka(arrn)
+function checkSuccessString(input: string): boolean {
+    return input === "success";
+  }
+  
+  console.log(checkSuccessString("success"));
+  console.log(checkSuccessString("failure"));

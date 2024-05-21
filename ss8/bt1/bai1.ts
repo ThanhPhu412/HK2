@@ -1,22 +1,19 @@
-function parseInput(input: any) {
-    if (typeof input === "number") {
-      return input;
-    } else if (input === "boolean") {
-      return true;
-    } else if (input === "string") {
-      return "Hello, world!";
-    } else if (input === "null") {
-      return null;
-    } else if (input === "undefined") {
-      return undefined;
-    } else {
-      return "Invalid input";
-    }
+let arrss1: [string, number] = ["vn", 1000];
+let arrss12: [string, number] = ["us", 2000];
+let arrss13: [string, number] = ["uk", 3000];
+
+const getShippingCost = (arr: [string, number]): any => {
+  if (arr[0] === "vn") {
+    console.log(arr[0] + ": " + arr[1]);
+  } else if (arr[0] === "us") {
+    console.log(arr[0] + ": " + arr[1]);
+  } else if (arr[0] === "uk") {
+    console.log(arr[0] + ": " + arr[1]);
+  } else {
+    console.log("khong co");
   }
-  
-  // Example usage:
-  console.log(parseInput(2));
-  console.log(parseInput("boolean")); // Output: true
-  console.log(parseInput("string")); // Output: Hello, world!
-  console.log(parseInput("null")); // Output: null
-  console.log(parseInput("undefined")); // Output: undefined
+};
+
+getShippingCost(arrss1);
+getShippingCost(arrss12);
+getShippingCost(arrss13);

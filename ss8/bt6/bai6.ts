@@ -1,12 +1,3 @@
-type type1 = string | number;
-type type2 = boolean | null;
-type type3 = type1 | type2;
+type HTTPmethod = "GET" | "POST" | "PUT" | "DELETE" | 1;
 
-function cong(check: type3) {
-  return console.log(check);
-}
-
-cong("a");
-cong(10);
-cong(true);
-cong(null);
+let method: HTTPmethod = "GET";
