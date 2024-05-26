@@ -89,7 +89,7 @@ console.log("\nClassroom 1 after removing student with ID 2:");
 classrooms1.showStudents();
 console.log("\nAll Students after removing student with ID 2 from Classroom 1:");
 console.log(allStudentsS);
-// Chỉnh sửa thông tin học sinh trong lớp học 2
+/// Chỉnh sửa thông tin học sinh trong lớp học 2
 classrooms2.editStudent(5, 'Eve Newname');
 console.log("\nClassroom 2 after editing student with ID 5:");
 classrooms2.showStudents();

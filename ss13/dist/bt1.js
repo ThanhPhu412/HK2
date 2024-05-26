@@ -20,6 +20,6 @@ class Rectangle extends Shapee {
         this.width = width;
         this.height = height;
     }
-}
-let ra = new Rectangle("kha", 10, 20);
+}//
+let ra = new Rectangle("Van", 10, 20);
 console.log(ra.getSize() + ra.getName());

@@ -29,7 +29,7 @@ class Vehicle implements ChangeSpeed {
         console.log(`Slowing down by ${amount}. New speed: ${this.speed}`);
     }
 
-    // Triển khai phương thức dừng
+    /// Triển khai phương thức dừng
     stop(): void {
         this.speed = 0;
         console.log(`Stopping the vehicle. New speed: ${this.speed}`);

@@ -49,5 +49,5 @@ partimeJob.printType(); // In ra: Job Type: Part-time
 console.log(`Part-time Job Salary: ${partimeJob.calculateSalary()}`); // In ra: Part-time Job Salary: 2400000
 
 const fulltimeJob = new FulltimeJob('Full-time');
-fulltimeJob.printType(); // In ra: Job Type: Full-time
+fulltimeJob.printType(); /// In ra: Job Type: Full-time
 console.log(`Full-time Job Salary: ${fulltimeJob.calculateSalary()}`); // In ra: Full-time Job Salary: 10000000

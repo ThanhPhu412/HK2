@@ -66,6 +66,6 @@ addStudentToClassroom(classroom2, 4);
 addStudentToClassroom(classroom2, 5);
 addStudentToClassroom(classroom2, 6);
 
-// Hiển thị học sinh trong mỗi lớp
+/// Hiển thị học sinh trong mỗi lớp
 classroom1.showStudents();
 classroom2.showStudents();

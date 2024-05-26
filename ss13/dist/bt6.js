@@ -20,7 +20,7 @@ class Square1 {
 }
 let square1 = new Square1(10);
 console.log(square1.tinhChuVi());
-/// abstract class chỉ có thể tạo class kế thừa phương thức trừu tượng ko thể tạo lớp con được
+///// abstract class chỉ có thể tạo class kế thừa phương thức trừu tượng ko thể tạo lớp con được
 class Animals1 {
     constructor(species, sex, color) {
         this.species = species;

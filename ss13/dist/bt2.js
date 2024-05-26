@@ -29,7 +29,7 @@ class FulltimeJob extends Job {
         return 10000000;
     }
 }
-// Sử dụng các lớp PartimeJob và FulltimeJob
+// //Sử dụng các lớp PartimeJob và FulltimeJob
 const partimeJob = new PartimeJob('Part-time', 80);
 partimeJob.printType(); // In ra: Job Type: Part-time
 console.log(`Part-time Job Salary: ${partimeJob.calculateSalary()}`); // In ra: Part-time Job Salary: 2400000

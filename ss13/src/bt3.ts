@@ -20,7 +20,7 @@ class Dog extends Animal {
         super(name);
     }
 
-    // Triển khai abstract method
+    /// Triển khai abstract method
     makeSound(): void {
         console.log("Woof! Woof!");
     }

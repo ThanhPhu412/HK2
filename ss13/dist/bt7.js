@@ -57,7 +57,7 @@ for (let i = 0; i < allStudents.length; i++) {
     else {
         class2.addStudent(allStudents[i]);
     }
-}
+}//
 console.log("lop 1: ");
 class1.showStudents();
 console.log("lop 2: ");

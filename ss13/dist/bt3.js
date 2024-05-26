@@ -32,4 +32,4 @@ dog.printName(); // In ra: Animal name: Buddy
 dog.makeSound(); // In ra: Woof! Woof!
 const cat = new Cat('Whiskers');
 cat.printName(); // In ra: Animal name: Whiskers
-cat.makeSound(); // In ra: Meow! Meow!
+cat.makeSound(); // //In ra: Meow! Meow!

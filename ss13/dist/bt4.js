@@ -21,7 +21,7 @@ let tiger = new Tiger();
 tiger.makeSound(); // Output: Roar! Roar!
 tiger.move(); // Output: Moving
 let elephant = new Elephant();
-elephant.makeSound(); // Output: Trumpet! Trumpet!
+elephant.makeSound(); //// Output: Trumpet! Trumpet!
 elephant.move(); // Output: Moving
 class Car1 {
     // Concrete method

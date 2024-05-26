@@ -29,7 +29,7 @@ interface Ishape {
   }
   let square1: Square1 = new Square1(10);
   console.log(square1.tinhChuVi());
-  /// abstract class chỉ có thể tạo class kế thừa phương thức trừu tượng ko thể tạo lớp con được
+  //// abstract class chỉ có thể tạo class kế thừa phương thức trừu tượng ko thể tạo lớp con được
   abstract class Animals1 {
     species: string;
     sex: boolean;

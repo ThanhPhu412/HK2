@@ -2,7 +2,7 @@
 
 // Định nghĩa lớp Rectangle kế thừa lớp Shape có thêm thuộc tính width và height.
 
-// Xây dựng phương thức getName để lấy ra tên của hình trong lớp cha, phương thức getSize để in ra các kích cỡ của hình trong lớp con.
+/// Xây dựng phương thức getName để lấy ra tên của hình trong lớp cha, phương thức getSize để in ra các kích cỡ của hình trong lớp con.
 
 abstract class Shapee {
     name: string;
@@ -29,5 +29,5 @@ abstract class Shapee {
     };
   }
   
-  let ra: Shapee = new Rectangle("kha", 10, 20);
+  let ra: Shapee = new Rectangle("Van", 10, 20);
   console.log(ra.getSize() + ra.getName());

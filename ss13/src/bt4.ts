@@ -24,7 +24,7 @@ abstract class Animal1 {
   
   let tiger: Tiger = new Tiger();
   tiger.makeSound(); // Output: Roar! Roar!
-  tiger.move(); // Output: Moving
+  tiger.move(); /// Output: Moving
   
   let elephant: Elephant = new Elephant();
   elephant.makeSound(); // Output: Trumpet! Trumpet!

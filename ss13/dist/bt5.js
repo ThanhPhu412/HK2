@@ -21,7 +21,7 @@ class Vehicle {
         this.speed = 0;
         console.log(`Stopping the vehicle. New speed: ${this.speed}`);
     }
-    // Phương thức lấy giá trị hiện tại của speed
+    //// Phương thức lấy giá trị hiện tại của speed
     getSpeed() {
         return this.speed;
     }
