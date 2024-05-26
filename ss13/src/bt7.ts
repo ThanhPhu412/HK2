@@ -45,12 +45,12 @@ class Classroom {
 }
 
 let allStudents: Student[] = [
-    new Student(1, "kha"),
-    new Student(2, "ha"),
-    new Student(3, "ta"),
-    new Student(4, "ngoc"),
-    new Student(5, "tran"),
-    new Student(6, "hao"),
+    new Student(1, "van"),
+    new Student(2, "Phuc"),
+    new Student(3, "Hanh"),
+    new Student(4, "Trung"),
+    new Student(5, "Thanh"),
+    new Student(6, "Lan"),
 ];
 
 let class1: Classroom = new Classroom();

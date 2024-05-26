@@ -35,7 +35,7 @@ class D1 extends Animals {
     constructor(species, sex, color) {
         super(species, sex, color);
         this.makeSound = () => {
-            return "Anh trung ơi nhẹ thôi";
+            return "từ từ thôi";
         };
     }
 }
@@ -55,9 +55,9 @@ class Checken1 extends Animals {
         };
     }
 }
-let dog1 = new D("Tâm anh", false, "đen");
-let cat1 = new c("EEE", false, "đen");
-let checken1 = new Checken("Tâm anh", false, "đen");
-console.log("tâm anh hú " + dog.makeSound());
-console.log("Mèo hú " + cat.makeSound());
-console.log("Gà kêu hú " + checken.makeSound());
+let dog1 = new D("chode", false, "đen");
+let cat1 = new c("Meooo", false, "đen");
+let checken1 = new Checken("o o o", false, "đen");
+console.log("ẳng ẳng ẳng " + dog.makeSound());
+console.log("meo meo mèo meo" + cat.makeSound());
+console.log("ò ó o ò o  " + checken.makeSound());

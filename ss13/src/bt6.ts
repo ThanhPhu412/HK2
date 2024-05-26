@@ -50,7 +50,7 @@ interface Ishape {
       super(species, sex, color);
     }
     makeSound = () => {
-      return "Anh trung ơi nhẹ thôi";
+      return "Từ từ thôi";
     };
   }
   class c1 extends Animals {
@@ -70,10 +70,10 @@ interface Ishape {
     };
   }
   
-  let dog1: Animals = new D("Tâm anh", false, "đen");
-  let cat1: Animals = new c("EEE", false, "đen");
-  let checken1: Animals = new Checken("Tâm anh", false, "đen");
+  let dog1: Animals = new D("chode", false, "đen");
+  let cat1: Animals = new c("Meooo", false, "đen");
+  let checken1: Animals = new Checken("o o o", false, "đen");
   
-  console.log("tâm anh hú " + dog.makeSound());
-  console.log("Mèo hú " + cat.makeSound());
-  console.log("Gà kêu hú " + checken.makeSound());
+  console.log("ẳng ẳng ẳng" + dog.makeSound());
+  console.log("meo meo mèo meo" + cat.makeSound());
+  console.log("ò ó o ò o " + checken.makeSound());
